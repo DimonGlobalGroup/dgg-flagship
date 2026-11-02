@@ -1,0 +1,546 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="Dimon Global Group is a privately held, multi-sector firm founded and led by RAD. Lead discipline: intelligent technology. Truth, made real." />
+<title>Dimon Global Group — Truth, made real.</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://dimonglobalgroup.com/#organization",
+      "name": "Dimon Global Group",
+      "url": "https://dimonglobalgroup.com/",
+      "slogan": "Truth, made real.",
+      "description": "Privately held, multi-sector firm founded and led by RAD. Lead discipline: intelligent technology — cognitive software architectures and autonomous systems designed, built, and verified in-house. Further sectors: property management, finance and ventures, and federal contracting (pursuing registration and eligibility).",
+      "founder": { "@id": "https://dimonglobalgroup.com/#founder" },
+      "sameAs": [
+        "https://www.instagram.com/thearchitectrad",
+        "https://www.threads.net/@thearchitectrad",
+        "https://www.youtube.com/@RobertDonaldson-rad",
+        "https://t.me/RAD_Dimon",
+        "https://github.com/DimonGlobalGroup"
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://dimonglobalgroup.com/#founder",
+      "name": "Robert Donaldson",
+      "alternateName": "RAD",
+      "jobTitle": "Founder",
+      "worksFor": { "@id": "https://dimonglobalgroup.com/#organization" },
+      "sameAs": [
+        "https://www.instagram.com/thearchitectrad",
+        "https://www.threads.net/@thearchitectrad",
+        "https://www.youtube.com/@RobertDonaldson-rad",
+        "https://t.me/RAD_Dimon",
+        "https://github.com/DimonGlobalGroup"
+      ]
+    }
+  ]
+}
+</script>
+<style>
+  :root{
+    --bg:#f5f4f0; --surface:#ffffff; --surface-2:#eceae3;
+    --ink:#16181a; --ink-soft:#3c4043; --muted:#6a6e66;
+    --line:#d8d5cb; --line-strong:#b9b5a8;
+    --green:#1e6b3c; --green-soft:#e3efe6;
+    --purple:#5b4390; --purple-soft:#eae5f4;
+    --hero-bg:#101312; --hero-ink:#f2f1ec; --hero-muted:#a7aca2; --hero-line:#2b2f2c;
+    --blueprint-tint:#123a56; --radius:6px;
+    --serif:Georgia, "Times New Roman", Times, serif;
+    --sans:-apple-system, "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --mono:ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  }
+  *{ box-sizing:border-box; }
+  html{ scroll-behavior:smooth; }
+  body{ margin:0; background:var(--bg); color:var(--ink); font-family:var(--sans); font-size:16px; line-height:1.6; -webkit-font-smoothing:antialiased; }
+  img{ display:block; max-width:100%; }
+  a{ color:var(--green); text-decoration:none; }
+  a:hover{ text-decoration:underline; }
+  .wrap{ max-width:1180px; margin:0 auto; padding:0 28px; }
+
+  .topbar{ position:sticky; top:0; z-index:20; background:rgba(245,244,240,.94); border-bottom:1px solid var(--line); }
+  .topbar-in{ display:flex; align-items:center; justify-content:space-between; gap:20px; padding:12px 0; }
+  .brand{ display:flex; align-items:center; gap:12px; color:var(--ink); }
+  .brand:hover{ text-decoration:none; }
+  .mono-mark{ font-family:var(--serif); font-weight:600; font-size:13px; letter-spacing:.14em; border:1.5px solid var(--ink); padding:5px 8px 4px; line-height:1; white-space:nowrap; }
+  .brand-name{ font-family:var(--serif); font-weight:600; font-size:16px; letter-spacing:.06em; white-space:nowrap; }
+  .nav{ display:flex; gap:26px; font-size:13px; font-weight:600; letter-spacing:.08em; text-transform:uppercase; }
+  .nav a{ color:var(--ink-soft); }
+  .nav a:hover{ color:var(--green); text-decoration:none; }
+  @media (max-width:640px){ .nav{ display:none; } .brand-name{ font-size:14px; } }
+
+  .hero{ background:var(--hero-bg); color:var(--hero-ink); }
+  .hero-in{ padding:72px 0 0; }
+  .hero-grid{ display:grid; grid-template-columns:1.55fr 1fr; gap:56px; align-items:end; }
+  .hero-eyebrow{ display:flex; align-items:center; gap:14px; font-size:12px; font-weight:600; letter-spacing:.22em; text-transform:uppercase; color:var(--hero-muted); margin:0 0 26px; }
+  .hero-eyebrow::after{ content:""; flex:1; height:1px; background:var(--hero-line); }
+  .hero-eyebrow .dot{ width:7px; height:7px; background:var(--green); display:inline-block; }
+  h1{ font-family:var(--serif); font-weight:500; margin:0; font-size:clamp(44px, 6.4vw, 84px); line-height:1.02; letter-spacing:.01em; }
+  h1 .gg{ color:#8fd0a6; }
+  .tagline{ font-family:var(--serif); font-style:italic; font-weight:400; font-size:clamp(22px, 2.8vw, 32px); margin:22px 0 0; }
+  .tagline .rule{ display:inline-block; width:44px; height:2px; background:var(--purple); vertical-align:middle; margin-right:16px; }
+  .hero-lede{ color:#cfd2c9; font-size:17px; line-height:1.65; max-width:56ch; margin:26px 0 0; }
+  .hero-lede strong{ color:var(--hero-ink); font-weight:600; }
+  .hero-actions{ display:flex; flex-wrap:wrap; gap:12px; margin:34px 0 56px; }
+  .btn{ display:inline-block; padding:12px 22px; font-size:13px; font-weight:600; letter-spacing:.1em; text-transform:uppercase; border:1px solid var(--hero-ink); color:var(--hero-ink); border-radius:3px; }
+  .btn:hover{ text-decoration:none; background:var(--hero-ink); color:var(--hero-bg); }
+  .btn.solid{ background:var(--green); border-color:var(--green); color:#fff; }
+  .btn.solid:hover{ background:#2a8a50; border-color:#2a8a50; color:#fff; }
+  .portrait-frame{ border:1px solid var(--hero-line); padding:10px; background:#151816; }
+  .portrait-frame img{ width:100%; aspect-ratio:1/1.08; object-fit:cover; object-position:50% 18%; }
+  .portrait-cap{ display:flex; justify-content:space-between; gap:12px; padding:12px 2px 2px; font-size:12px; letter-spacing:.12em; text-transform:uppercase; color:var(--hero-muted); }
+  .portrait-cap b{ color:var(--hero-ink); font-weight:600; }
+  .hero-strip{ border-top:1px solid var(--hero-line); margin-top:56px; display:grid; grid-template-columns:repeat(4,1fr); }
+  .hero-strip div{ padding:18px 22px 20px; border-left:1px solid var(--hero-line); }
+  .hero-strip div:first-child{ border-left:none; padding-left:0; }
+  .hero-strip .k{ font-family:var(--mono); font-size:11px; letter-spacing:.14em; color:#7fc79b; text-transform:uppercase; }
+  .hero-strip .v{ font-family:var(--serif); font-size:17px; margin-top:4px; }
+  @media (max-width:900px){
+    .hero-grid{ grid-template-columns:1fr; gap:36px; }
+    .portrait-frame{ max-width:420px; }
+    .hero-strip{ grid-template-columns:1fr 1fr; }
+    .hero-strip div{ padding-left:16px; }
+    .hero-strip div:nth-child(odd){ border-left:none; padding-left:0; }
+  }
+
+  section{ padding:84px 0 0; }
+  .sec-head{ display:flex; align-items:baseline; gap:18px; border-top:2px solid var(--ink); padding-top:18px; margin-bottom:14px; }
+  .sec-num{ font-family:var(--mono); font-size:13px; color:var(--green); font-weight:600; }
+  .sec-head h2{ font-family:var(--serif); font-weight:500; font-size:clamp(28px,3.4vw,40px); margin:0; line-height:1.15; }
+  .sec-head .sec-note{ margin-left:auto; font-size:13px; color:var(--muted); max-width:34ch; text-align:right; }
+  @media (max-width:700px){ .sec-head .sec-note{ display:none; } }
+  .sec-intro{ color:var(--ink-soft); max-width:68ch; margin:0 0 8px; font-size:16.5px; }
+
+  .sector{ display:grid; grid-template-columns:110px 1fr 1.2fr; gap:28px; padding:30px 0; border-bottom:1px solid var(--line); align-items:start; }
+  .sector:first-of-type{ border-top:1px solid var(--line); }
+  .sector .no{ font-family:var(--serif); font-size:44px; font-weight:300; line-height:1; color:var(--muted); }
+  .sector .no em{ font-style:normal; color:var(--green); }
+  .sector h3{ font-family:var(--serif); font-weight:600; font-size:23px; margin:2px 0 8px; line-height:1.25; }
+  .tag{ display:inline-block; font-size:11px; font-weight:700; letter-spacing:.14em; text-transform:uppercase; padding:3px 9px; border-radius:999px; }
+  .tag-live{ background:var(--green-soft); color:var(--green); }
+  .tag-dev{ background:var(--purple-soft); color:var(--purple); }
+  .sector p{ margin:0; color:var(--ink-soft); font-size:15.5px; }
+  .sector ul{ margin:10px 0 0; padding:0; list-style:none; }
+  .sector ul li{ font-size:14.5px; color:var(--ink-soft); padding:5px 0 5px 18px; position:relative; border-top:1px dashed var(--line); }
+  .sector ul li::before{ content:""; position:absolute; left:0; top:13px; width:7px; height:7px; background:var(--green); }
+  .sector ul li b{ color:var(--ink); font-weight:600; }
+  @media (max-width:820px){ .sector{ grid-template-columns:64px 1fr; } .sector .body{ grid-column:2; } .sector .no{ font-size:32px; } }
+
+  .bp-band{ display:grid; grid-template-columns:1.6fr 1fr; gap:14px; margin-top:34px; }
+  .bp-band figure, .bp-stack figure{ margin:0; position:relative; overflow:hidden; border-radius:var(--radius); background:var(--blueprint-tint); }
+  .bp-band img, .bp-stack img{ width:100%; height:100%; object-fit:cover; }
+  .bp-band .main img{ aspect-ratio:16/8.6; }
+  .bp-stack{ display:grid; grid-template-rows:1fr 1fr; gap:14px; }
+  .bp-stack img{ aspect-ratio:16/7.4; }
+  figcaption{ position:absolute; left:0; right:0; bottom:0; padding:26px 16px 12px; background:linear-gradient(transparent, rgba(6,16,24,.82)); color:#e8eef2; font-size:12px; letter-spacing:.1em; text-transform:uppercase; font-weight:600; }
+  figcaption span{ display:block; font-weight:400; letter-spacing:.02em; text-transform:none; color:#b9c9d4; font-size:12.5px; margin-top:2px; }
+  @media (max-width:820px){ .bp-band{ grid-template-columns:1fr; } .bp-band .main img{ aspect-ratio:16/10; } }
+
+  .feature{ margin-top:34px; border:1px solid var(--line-strong); background:var(--surface); border-radius:var(--radius); overflow:hidden; }
+  .feature-in{ display:grid; grid-template-columns:1.25fr 1fr; }
+  .feature-copy{ padding:38px 40px; }
+  .feature-copy .k{ font-family:var(--mono); font-size:11.5px; letter-spacing:.16em; text-transform:uppercase; color:var(--purple); font-weight:600; }
+  .feature-copy h3{ font-family:var(--serif); font-size:32px; font-weight:600; margin:10px 0 4px; line-height:1.15; }
+  .feature-copy .sub{ font-family:var(--serif); font-style:italic; color:var(--muted); font-size:17px; margin:0 0 16px; }
+  .feature-copy p{ color:var(--ink-soft); margin:0 0 14px; font-size:15.5px; }
+  .feature-stats{ border-left:1px solid var(--line); display:grid; grid-template-rows:repeat(4,1fr); }
+  .stat{ padding:20px 28px; border-bottom:1px solid var(--line); display:flex; align-items:baseline; gap:18px; }
+  .stat:last-child{ border-bottom:none; }
+  .stat .n{ font-family:var(--serif); font-size:36px; font-weight:500; line-height:1; min-width:118px; }
+  .stat .n small{ font-size:20px; color:var(--muted); }
+  .stat .l{ font-size:13px; color:var(--muted); line-height:1.45; }
+  .stat .l b{ display:block; color:var(--ink); font-size:13.5px; }
+  @media (max-width:860px){ .feature-in{ grid-template-columns:1fr; } .feature-stats{ border-left:none; border-top:1px solid var(--line); } .feature-copy{ padding:30px 24px; } }
+  .projects{ margin-top:14px; border-top:1px solid var(--line); }
+  .project{ display:grid; grid-template-columns:64px 1fr auto; gap:22px; padding:26px 4px; border-bottom:1px solid var(--line); align-items:start; }
+  .project .pno{ font-family:var(--mono); font-size:13px; color:var(--muted); padding-top:5px; }
+  .project h4{ font-family:var(--serif); font-size:21px; font-weight:600; margin:0 0 6px; }
+  .project h4 .ver{ font-family:var(--mono); font-size:12px; font-weight:400; color:var(--green); letter-spacing:.06em; margin-left:8px; white-space:nowrap; }
+  .project p{ margin:0; color:var(--ink-soft); font-size:15px; max-width:72ch; }
+  .project .metric{ text-align:right; min-width:120px; }
+  .project .metric .n{ font-family:var(--serif); font-size:26px; font-weight:500; line-height:1.1; }
+  .project .metric .l{ font-size:11.5px; color:var(--muted); letter-spacing:.06em; text-transform:uppercase; }
+  @media (max-width:700px){ .project{ grid-template-columns:40px 1fr; } .project .metric{ grid-column:2; text-align:left; margin-top:8px; } }
+
+  .standard{ margin-top:34px; background:var(--surface-2); border-radius:var(--radius); padding:34px 40px; display:grid; grid-template-columns:auto 1fr; gap:30px; align-items:center; }
+  .standard .mono-mark{ font-size:20px; padding:12px 14px 10px; }
+  .standard blockquote{ margin:0; font-family:var(--serif); font-size:clamp(19px,2.2vw,24px); line-height:1.45; font-weight:400; }
+  .standard blockquote b{ color:var(--green); font-weight:600; }
+  @media (max-width:700px){ .standard{ grid-template-columns:1fr; padding:28px 24px; } }
+
+  .about-grid{ display:grid; grid-template-columns:380px 1fr; gap:52px; margin-top:30px; align-items:start; }
+  .about-photo{ border:1px solid var(--line-strong); padding:10px; background:var(--surface); border-radius:var(--radius); }
+  .about-photo img{ width:100%; aspect-ratio:1/1.05; object-fit:cover; object-position:50% 18%; }
+  .about-photo .cap{ display:flex; justify-content:space-between; padding:12px 2px 2px; font-size:12px; letter-spacing:.12em; text-transform:uppercase; color:var(--muted); }
+  .about-photo .cap b{ color:var(--ink); }
+  .about-copy p{ color:var(--ink-soft); font-size:16.5px; margin:0 0 18px; max-width:62ch; }
+  .about-copy p:first-child{ font-size:19px; color:var(--ink); font-family:var(--serif); line-height:1.55; }
+  .about-copy .sig{ margin-top:26px; padding-top:20px; border-top:1px solid var(--line); }
+  .about-copy .sig .name{ font-family:var(--serif); font-size:22px; font-weight:600; }
+  .about-copy .sig .role{ font-size:13px; letter-spacing:.12em; text-transform:uppercase; color:var(--muted); margin-top:2px; }
+  .principles{ display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin-top:30px; }
+  .principle{ border:1px solid var(--line); border-radius:var(--radius); padding:20px 22px; background:var(--surface); }
+  .principle .pn{ font-family:var(--mono); font-size:12px; color:var(--purple); font-weight:600; }
+  .principle h5{ font-family:var(--serif); font-size:17px; margin:8px 0 6px; font-weight:600; }
+  .principle p{ font-size:13.5px; color:var(--muted); margin:0; line-height:1.55; }
+  @media (max-width:900px){ .about-grid{ grid-template-columns:1fr; } .about-photo{ max-width:400px; } .principles{ grid-template-columns:1fr; } }
+
+  .contact-grid{ display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-top:30px; }
+  .channel{ border:1px solid var(--line); background:var(--surface); border-radius:var(--radius); padding:26px 28px; display:flex; justify-content:space-between; align-items:center; gap:16px; }
+  .channel .pl{ font-size:12px; font-weight:700; letter-spacing:.16em; text-transform:uppercase; color:var(--muted); }
+  .channel .handle{ font-family:var(--serif); font-size:22px; font-weight:600; margin-top:4px; color:var(--ink); }
+  .channel .go{ font-family:var(--mono); font-size:12px; color:var(--green); white-space:nowrap; }
+  a.channel:hover{ text-decoration:none; border-color:var(--green); }
+  @media (max-width:700px){ .contact-grid{ grid-template-columns:1fr; } }
+  .contact-note{ color:var(--muted); font-size:14px; margin-top:18px; max-width:66ch; }
+
+  footer{ margin-top:96px; background:var(--hero-bg); color:var(--hero-ink); }
+  .foot-in{ padding:48px 0 40px; }
+  .foot-top{ display:flex; justify-content:space-between; gap:28px; flex-wrap:wrap; align-items:flex-start; }
+  .foot-brand .mono-mark{ border-color:var(--hero-ink); }
+  .foot-brand .fname{ font-family:var(--serif); font-size:20px; font-weight:600; letter-spacing:.05em; margin-top:14px; }
+  .foot-brand .ftag{ font-family:var(--serif); font-style:italic; color:var(--hero-muted); margin-top:2px; }
+  .foot-nav{ display:flex; gap:44px; flex-wrap:wrap; font-size:13.5px; }
+  .foot-nav .col h6{ margin:0 0 10px; font-size:11px; letter-spacing:.18em; text-transform:uppercase; color:var(--hero-muted); font-weight:700; }
+  .foot-nav .col a{ display:block; color:#d7d9d2; padding:3px 0; }
+  .foot-nav .col span{ display:block; color:#d7d9d2; padding:3px 0; }
+  .foot-legal{ border-top:1px solid var(--hero-line); margin-top:38px; padding-top:22px; font-size:12.5px; color:var(--hero-muted); line-height:1.7; }
+  .foot-legal p{ margin:0 0 8px; max-width:92ch; }
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap topbar-in">
+    <a class="brand" href="#top" aria-label="Dimon Global Group — home">
+      <span class="mono-mark">RAD</span>
+      <span class="brand-name">DIMON GLOBAL GROUP</span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#sectors">Sectors</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero" id="top">
+  <div class="wrap hero-in">
+    <div class="hero-grid">
+      <div>
+        <p class="hero-eyebrow"><span class="dot"></span> Privately held &middot; Multi-sector &middot; Founder-led</p>
+        <h1>DIMON<br />GLOBAL <span class="gg">GROUP</span></h1>
+        <p class="tagline"><span class="rule"></span>Truth, made real.</p>
+        <p class="hero-lede">Dimon Global Group is a privately held, multi-sector firm founded and led by <strong>RAD</strong>, whose lead discipline is <strong>intelligent technology</strong> — cognitive software architectures and autonomous systems designed, built, and verified in-house. From that base, the Group operates across property management, develops its finance and venture interests, and is pursuing eligibility to compete for United States federal contracts. One standard governs every sector the Group enters: <strong>what we say is real, and what we build works.</strong></p>
+        <div class="hero-actions">
+          <a class="btn solid" href="#portfolio">The portfolio</a>
+          <a class="btn" href="#sectors">The sectors</a>
+        </div>
+      </div>
+      <figure style="margin:0">
+        <div class="portrait-frame">
+          <img src="assets/portrait.jpg" alt="Robert Donaldson (RAD), Founder of Dimon Global Group, in a black suit and fedora" />
+          <div class="portrait-cap"><span><b>Robert Donaldson</b></span><span>RAD &middot; Founder</span></div>
+        </div>
+      </figure>
+    </div>
+    <div class="hero-strip" aria-label="Group profile">
+      <div><div class="k">01 &middot; Lead sector</div><div class="v">AI Systems &amp; Technology</div></div>
+      <div><div class="k">02 &middot; Operations</div><div class="v">Property Management</div></div>
+      <div><div class="k">03 &middot; In development</div><div class="v">Finance &amp; Ventures</div></div>
+      <div><div class="k">04 &middot; In pursuit</div><div class="v">Federal Contracting</div></div>
+    </div>
+  </div>
+</div>
+
+<main class="wrap">
+
+  <section id="sectors">
+    <div class="sec-head">
+      <span class="sec-num">§ 01</span>
+      <h2>Sectors</h2>
+      <p class="sec-note">Four divisions. One standard of proof, set by the first.</p>
+    </div>
+    <p class="sec-intro">The Group is organized as four numbered divisions. The technology division is the headline sector and the working portfolio; the others are presented exactly as they stand — operating, developing, or in pursuit — with nothing stated ahead of the record.</p>
+
+    <article class="sector">
+      <div class="no"><em>01</em></div>
+      <div>
+        <h3>AI Systems &amp; Technology</h3>
+        <span class="tag tag-live">Working portfolio</span>
+      </div>
+      <div class="body">
+        <p>The Group&rsquo;s technology division designs and builds intelligent systems end to end. This is not a services menu the firm hopes to sell one day — it is a working portfolio, published and hash-verified, and it is the standard of proof the other divisions are held to.</p>
+        <ul>
+          <li><b>NEUROGEN / SPHERION</b> — cognitive software architecture with measured, reproducible benchmark results</li>
+          <li><b>The Hope line</b> — autonomous agent systems, built as a single self-contained file</li>
+          <li><b>Hope Pi</b> — self-maintaining autonomous hardware nodes</li>
+          <li><b>Hope Bridge</b> — device-integration software connecting systems across platforms</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="sector">
+      <div class="no">02</div>
+      <div>
+        <h3>Property Management</h3>
+        <span class="tag tag-live">Operating</span>
+      </div>
+      <div class="body">
+        <p>The Group manages residential property with the same operating discipline it applies to software: documented condition, scheduled maintenance, straight accounting. Growth in this division is deliberate — properties are added when they can be managed to the standard, not before.</p>
+      </div>
+    </article>
+
+    <article class="sector">
+      <div class="no">03</div>
+      <div>
+        <h3>Finance &amp; Ventures</h3>
+        <span class="tag tag-dev">In development</span>
+      </div>
+      <div class="body">
+        <p>The Group is developing its finance and venture interests — evaluating positions and structures with a long-term, cash-disciplined approach. Nothing in this division is offered to the public, and nothing here is investment advice; it is the Group&rsquo;s own capital, put to work under the same rule as everything else: verified, or it doesn&rsquo;t ship.</p>
+      </div>
+    </article>
+
+    <article class="sector">
+      <div class="no">04</div>
+      <div>
+        <h3>Federal Contracting</h3>
+        <span class="tag tag-dev">In pursuit</span>
+      </div>
+      <div class="body">
+        <p>The Group is pursuing registration and eligibility to compete for United States federal contracts, building on its technology portfolio. The capabilities being brought to that market are the ones already proven in the portfolio: intelligent systems, autonomous operation, and verification discipline.</p>
+      </div>
+    </article>
+
+    <div class="bp-band" aria-label="Architecture drawings from the Group's design work">
+      <figure class="main">
+        <img src="assets/blueprint-hope-engine.jpg" alt="System architecture blueprint for Project HOPE, the Group's local AI engine — zero-dependency Python core, SQLite memory engine, and peer-to-peer mesh messaging" />
+        <figcaption>Project HOPE — Local AI Engine<span>System architecture, v1.0. The design record behind the Hope line of agent systems.</span></figcaption>
+      </figure>
+      <div class="bp-stack">
+        <figure>
+          <img src="assets/blueprint-aether.jpg" alt="Blueprint of the Aether Pipeline Middleware — trust-tiered routing with fail-closed chain verification and a gatekeeper layer" />
+          <figcaption>Aether Pipeline Middleware<span>Trust-tiered routing with fail-closed verification.</span></figcaption>
+        </figure>
+        <figure>
+          <img src="assets/blueprint-swarm.jpg" alt="Blueprint of Project AETHER, the Sovereign Swarm OS — semantic intent bus, ghost runtime, and spatial world model" />
+          <figcaption>Project AETHER — Sovereign Swarm OS<span>Semantic intent bus and autonomous runtime design.</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <div class="sec-head">
+      <span class="sec-num">§ 02</span>
+      <h2>Portfolio</h2>
+      <p class="sec-note">Named systems, with the numbers attached where numbers exist.</p>
+    </div>
+    <p class="sec-intro">Proof objects, not claims. Each system below exists, was built in-house, and is described at the level the record supports — measured results where measurement was run, plain description where it was not.</p>
+
+    <div class="feature">
+      <div class="feature-in">
+        <div class="feature-copy">
+          <p class="k">Lead system &middot; Cognitive architecture</p>
+          <h3>NEUROGEN / SPHERION</h3>
+          <p class="sub">Six engines. One verdict.</p>
+          <p>SPHERION is the current release of the NEUROGEN line: a cognitive software architecture built from six engines — concept, relationship, activation, competition, adaptive memory, and reasoning/execution — with Go principles implemented as computation, a language layer, and pipeline integration.</p>
+          <p>It ships as a hash-verified release package, tested against its frozen predecessors byte for byte. In its published four-configuration experiments, the full SPHERION configuration scored 1.000 against a 0.830 baseline — with an unsupported-inference rate of 0.000 and 100% reproducibility across runs. The experiments also record what did not work: activation for candidate selection did not ship. Both results are published. That is the point of the standard.</p>
+        </div>
+        <div class="feature-stats" aria-label="SPHERION measured results">
+          <div class="stat"><div class="n">1.000</div><div class="l"><b>Full configuration</b>Experiment score, four-configuration suite</div></div>
+          <div class="stat"><div class="n">0.830</div><div class="l"><b>Baseline</b>Comparison configuration, same suite</div></div>
+          <div class="stat"><div class="n">0.000</div><div class="l"><b>Unsupported-inference rate</b>Claims made without evidence, measured</div></div>
+          <div class="stat"><div class="n">100<small>%</small></div><div class="l"><b>Reproducibility</b>Identical results across repeated runs</div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="projects">
+      <article class="project">
+        <div class="pno">P—01</div>
+        <div>
+          <h4>Hope — Single-File Agent <span class="ver">v0.11</span></h4>
+          <p>An autonomous agent system built as one self-contained file, standard library only — no downloaded dependencies. A connectome knowledge graph with staged writes, a zero-trust policy gate, HMAC-signed manifests, a sandboxed worker, and a built-in control interface. The current build passes its full test suite: 189 of 189.</p>
+        </div>
+        <div class="metric"><div class="n">189/189</div><div class="l">Tests passing</div></div>
+      </article>
+
+      <article class="project">
+        <div class="pno">P—02</div>
+        <div>
+          <h4>Hope Pi — Autonomous Nodes</h4>
+          <p>Self-maintaining autonomous hardware nodes built on single-board computers: systems designed to provision, monitor, and recover themselves with minimal hands-on time, extending the Hope line from software into physical infrastructure.</p>
+        </div>
+        <div class="metric"><div class="n">24/7</div><div class="l">Unattended operation, by design</div></div>
+      </article>
+
+      <article class="project">
+        <div class="pno">P—03</div>
+        <div>
+          <h4>Hope Bridge — Device Integration</h4>
+          <p>Device-integration software that connects the Group&rsquo;s systems across phones and platforms — holding real device capabilities on one side and serving them, under lock, to the systems that need them on the other.</p>
+        </div>
+        <div class="metric"><div class="n">2</div><div class="l">Phone platforms bridged</div></div>
+      </article>
+
+      <article class="project">
+        <div class="pno">P—04</div>
+        <div>
+          <h4>Hope Forge</h4>
+          <p>A 61-module agent framework running on-device: a multi-agent organism with a master control loop, built and refined module by module through a paste-back development workflow, with its mesh of agents verified live.</p>
+        </div>
+        <div class="metric"><div class="n">61</div><div class="l">Modules in the framework</div></div>
+      </article>
+
+      <article class="project">
+        <div class="pno">P—05</div>
+        <div>
+          <h4>Privacy &amp; Data-Removal Tooling</h4>
+          <p>Working tooling for finding and removing personal data from data-broker listings: a tracked queue of broker opt-outs, each prepared, approved, submitted, and followed up on a schedule. Built for the founder&rsquo;s own records first; it is the same discipline the Group applies everywhere — personal information stays under its owner&rsquo;s control.</p>
+        </div>
+        <div class="metric"><div class="n">30</div><div class="l">Brokers in the removal queue</div></div>
+      </article>
+    </div>
+
+    <div class="standard">
+      <span class="mono-mark">RAD</span>
+      <blockquote>&ldquo;If it&rsquo;s on this page, it exists. If it doesn&rsquo;t exist yet, this page says so. <b>That&rsquo;s the whole brand, and it&rsquo;s not changing.</b>&rdquo;</blockquote>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="sec-head">
+      <span class="sec-num">§ 03</span>
+      <h2>About the Principal</h2>
+      <p class="sec-note">One accountable name behind the group name.</p>
+    </div>
+    <div class="about-grid">
+      <figure style="margin:0">
+        <div class="about-photo">
+          <img src="assets/portrait.jpg" alt="Portrait of Robert Donaldson (RAD), Founder of Dimon Global Group" />
+          <div class="cap"><span><b>Robert Donaldson</b></span><span>RAD</span></div>
+        </div>
+      </figure>
+      <div class="about-copy">
+        <p>I started with nothing handed to me, so everything here was built — line by line, dollar by dollar, on the record.</p>
+        <p>Dimon Global Group is where all of it lives: the technology I design, the property I manage, and the ventures I&rsquo;m building next. The software comes first because it can be proven first — every system in the portfolio was written in-house, tested against its own record, and published with its results attached, including the results that didn&rsquo;t flatter it.</p>
+        <p>I don&rsquo;t do hype. I believe the world runs better on truth and real — real work, real numbers, real names on real things. The other divisions are held to the same rule as the code: documented, verified, or plainly labeled as still in pursuit.</p>
+        <div class="sig">
+          <div class="name">Robert Donaldson (RAD)</div>
+          <div class="role">Founder, Dimon Global Group</div>
+        </div>
+        <div class="principles">
+          <div class="principle">
+            <div class="pn">I.</div>
+            <h5>Built, not assembled</h5>
+            <p>The Group&rsquo;s systems are written line by line in-house, on standard foundations, so every part of them can be inspected, tested, and answered for.</p>
+          </div>
+          <div class="principle">
+            <div class="pn">II.</div>
+            <h5>Numbers over adjectives</h5>
+            <p>Where a result can be measured, it is published with its measurement. Where it cannot, the page says what stage the work is actually at.</p>
+          </div>
+          <div class="principle">
+            <div class="pn">III.</div>
+            <h5>One name, on the record</h5>
+            <p>The founder&rsquo;s name and face stand behind every division. No anonymous structures, no borrowed authority.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" style="padding-bottom:8px">
+    <div class="sec-head">
+      <span class="sec-num">§ 04</span>
+      <h2>Contact</h2>
+      <p class="sec-note">Public channels only, monitored by the founder.</p>
+    </div>
+    <p class="sec-intro">The Group is reached through the founder&rsquo;s public channels. Business inquiries, contracting conversations, and portfolio questions all start there.</p>
+    <div class="contact-grid">
+      <a class="channel" href="https://www.instagram.com/thearchitectrad" target="_blank" rel="noopener">
+        <div><div class="pl">Instagram</div><div class="handle">@thearchitectrad</div></div>
+        <span class="go">Open &rarr;</span>
+      </a>
+      <a class="channel" href="https://www.threads.net/@thearchitectrad" target="_blank" rel="noopener">
+        <div><div class="pl">Threads</div><div class="handle">@thearchitectrad</div></div>
+        <span class="go">Open &rarr;</span>
+      </a>
+      <a class="channel" href="https://www.youtube.com/@RobertDonaldson-rad" target="_blank" rel="noopener">
+        <div><div class="pl">YouTube</div><div class="handle">@RobertDonaldson-rad</div></div>
+        <span class="go">Open &rarr;</span>
+      </a>
+      <a class="channel" href="https://t.me/RAD_Dimon" target="_blank" rel="noopener">
+        <div><div class="pl">Telegram</div><div class="handle">@RAD_Dimon</div></div>
+        <span class="go">Open &rarr;</span>
+      </a>
+      <a class="channel" href="https://github.com/DimonGlobalGroup" target="_blank" rel="noopener">
+        <div><div class="pl">GitHub</div><div class="handle">DimonGlobalGroup</div></div>
+        <span class="go">Open &rarr;</span>
+      </a>
+      <div class="channel">
+        <div><div class="pl">Facebook</div><div class="handle">Robert Donaldson</div></div>
+        <span class="go">Public profile</span>
+      </div>
+    </div>
+    <p class="contact-note">This page lists channels only — the Group publishes no personal email address, street address, or telephone number.</p>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot-in">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <span class="mono-mark">RAD</span>
+        <div class="fname">DIMON GLOBAL GROUP</div>
+        <div class="ftag">Truth, made real.</div>
+      </div>
+      <nav class="foot-nav" aria-label="Footer">
+        <div class="col">
+          <h6>Sectors</h6>
+          <a href="#sectors">01 &middot; AI Systems &amp; Technology</a>
+          <a href="#sectors">02 &middot; Property Management</a>
+          <a href="#sectors">03 &middot; Finance &amp; Ventures</a>
+          <a href="#sectors">04 &middot; Federal Contracting</a>
+        </div>
+        <div class="col">
+          <h6>The Group</h6>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#about">About the Principal</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="col">
+          <h6>Public channels</h6>
+          <span>Instagram &middot; @thearchitectrad</span>
+          <span>Threads &middot; @thearchitectrad</span>
+          <span>YouTube &middot; @RobertDonaldson-rad</span>
+          <span>Telegram &middot; @RAD_Dimon</span>
+          <span>GitHub &middot; DimonGlobalGroup</span>
+        </div>
+      </nav>
+    </div>
+    <div class="foot-legal">
+      <p>Dimon is the founder&rsquo;s chosen name; legal change in progress. Dimon Global Group has no affiliation with any other firm or person of that name.</p>
+      <p>Nothing on this page is an offer of securities or investment advice. Federal contracting capabilities are described as pursuits: the Group is pursuing registration and eligibility to compete for United States federal contracts. Portfolio results are the systems&rsquo; own published measurements, stated as recorded.</p>
+      <p>&copy; <span id="yr">2026</span> Dimon Global Group.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    var y = document.getElementById('yr');
+    if (y) { y.textContent = new Date().getFullYear(); }
+  })();
+</script>
+</body>
+</html>
